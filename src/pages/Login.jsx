@@ -9,7 +9,7 @@ export default function Login() {
   // PRE-FILL FOR DEV PURPOSES
   const navigate = useNavigate();
 
-  const [email, setEmail] = useState("jack@example.com");
+  const [email, setEmail] = useState("carter@example.com");
   const [password, setPassword] = useState("qwerty");
 
   const { login, isAuthenticated } = useAuth();

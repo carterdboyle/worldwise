@@ -1,0 +1,16 @@
+{
+  "cities": [
+    {
+      "cityName": "Piscataway",
+      "country": "United States of America (the)",
+      "emoji": "🇺🇸",
+      "date": "2025-03-15T13:28:52.877Z",
+      "notes": "hell",
+      "position": {
+        "lat": "38.685509760012025",
+        "lng": "-77.01416015625001"
+      },
+      "id": 1
+    }
+  ]
+}

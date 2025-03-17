@@ -18,10 +18,10 @@ import styles from "./Map.module.css";
 
 function Map() {
   const { cities } = useCities();
-  const [mapPosition, setMapPosition] = useState([40, 0]);
+  const [mapPosition, setMapPosition] = useState([0, 0]);
   const {
-    isLoading: isLoadingPosition,
     position: geolocationPosition,
+    isLoading: isLoadingPosition,
     getPosition,
   } = useGeolocation();
 
@@ -38,8 +38,9 @@ function Map() {
     function () {
       if (geolocationPosition)
         setMapPosition([geolocationPosition.lat, geolocationPosition.lng]);
+      else getPosition();
     },
-    [geolocationPosition]
+    [geolocationPosition, getPosition]
   );
 
   return (
